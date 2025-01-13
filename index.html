@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>phi</title>
+    <title>ecomostoles</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
 </head>
@@ -12,10 +12,11 @@
         <!-- Carga de modelos -->
         <a-assets>
             <a-asset-item id="museo2-glb" src="https://bdosantos.github.io/Sigma/museo2.glb"></a-asset-item>
-       </a-assets> 
+       <a-assets-item id="logo-glb" src="logo-glb"></a-assets-item>
         </a-assets> 
         <!-- Modelo 3D del museo y objetos internos -->
         <a-entity gltf-model="#museo2-glb" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="logo-glb" position="36.1 8 10" scale="4 4 4" rotation="90 0 90"></a-entity>
             <!-- Luz ambiental con intensidad baja para evitar sobreiluminar las paredes -->
             <a-light type="ambient" color="#FFFFFF" intensity="0.35"></a-light>
 
